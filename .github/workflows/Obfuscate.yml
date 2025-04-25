@@ -39,7 +39,7 @@ jobs:
           --identifier-names-generator hexadecimal \
           --rename-globals true \
           --string-array true \
-          -string-array-rotate true \
+          --string-array-rotate true \
           --string-array-encoding 'base64' \
           --string-array-threshold 0.75 \
           --transform-object-keys true \
