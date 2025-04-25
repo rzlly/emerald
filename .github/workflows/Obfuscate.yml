@@ -30,7 +30,7 @@ jobs:
 
       - name: Download and extract latest BPB worker
         run: |
-          wget -O origin.js https://raw.githubusercontent.com/rzlly/Cloudflare_vless_trojan/refs/heads/main/Vless_workers_pages/origin.js
+          wget -O origin.js https://raw.githubusercontent.com/rzlly/Cloudflare_vless_trojan/refs/heads/main/Vless_workers_pages/o1.js
 
       - name: Obfuscate BPB worker js
         run: |
