@@ -30,9 +30,7 @@ jobs:
 
       - name: Download and extract latest BPB worker
         run: |
-          wget https://github.com/bia-pain-bache/BPB-Worker-Panel/releases/download/v3.2.3/worker.zip
-          unzip -o worker.zip
-          mv _worker.js origin.js
+          wget https://raw.githubusercontent.com/rzlly/Cloudflare_vless_trojan/refs/heads/main/Vless_workers_pages/origin.js
 
       - name: Obfuscate BPB worker js
         run: |
@@ -41,6 +39,7 @@ jobs:
           --identifier-names-generator hexadecimal \
           --rename-globals true \
           --string-array true \
+          -string-array-rotate true \
           --string-array-encoding 'base64' \
           --string-array-threshold 0.75 \
           --transform-object-keys true \
